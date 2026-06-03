@@ -38,3 +38,43 @@ GENESIS_PHRASES = [
     "Let's build.",
     "Absolutely.",
 ]
+
+SECOND_CHANCE = """
+Second Chance is a reentry, employment, and opportunity platform
+created by Alejandro Fowler.
+
+Its mission is to help justice-impacted individuals rebuild their lives
+through employment, mentorship, education, financial literacy,
+personal development, and verified achievement tracking.
+
+Second Chance connects participants, mentors, employers,
+funders, and community organizations into a single ecosystem
+designed to create opportunity and reduce recidivism.
+"""
+
+TRUSTPAY = """
+TrustPay is a trust-centered financial platform created by
+Alejandro Fowler.
+
+TrustPay is designed to help families manage inheritance,
+allowances, trust distributions, financial education,
+and controlled money management.
+
+Its mission is to preserve wealth, increase financial literacy,
+and help families build generational assets.
+"""
+
+WITH_CONFIDENCE = """
+With Confidence is a business and financial education company
+founded by Alejandro Fowler.
+
+Its mission is to help people build confidence, personal credit,
+business credit, entrepreneurship skills, financial literacy,
+and generational wealth.
+
+The company's philosophy is:
+
+Build Confidence.
+Build Credit.
+Build Wealth.
+"""
