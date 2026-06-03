@@ -1,7 +1,8 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import os
-
+from genesis_knowledge import ABOUT_ALEJANDRO
+from genesis_knowledge import FOUNDER
 TOKEN = os.getenv("BOT_TOKEN")
 
 # START COMMAND
@@ -53,7 +54,16 @@ async def leadership(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text.lower()
 
-    if "genesis" in text:
+    if "who is alejandro" in text or "alejandro fowler" in text:
+        await update.message.reply_text(ABOUT_ALEJANDRO)
+
+    elif "who created genesis" in text or "founder of genesis" in text:
+        await update.message.reply_text(
+            f"Genesis was created by {FOUNDER['name']}, {FOUNDER['role']}. "
+            f"His mission is {FOUNDER['mission']}"
+        )
+
+    elif "genesis" in text:
         await update.message.reply_text(
             "I'm here. How can I help?"
         )
