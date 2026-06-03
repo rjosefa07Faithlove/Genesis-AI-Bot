@@ -78,3 +78,8 @@ Build Confidence.
 Build Credit.
 Build Wealth.
 """
+
+WITH_CONFIDENCE = """
+With Confidence focuses on building confidence,
+credit, business ownership, and wealth.
+"""
