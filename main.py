@@ -68,20 +68,28 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
 
 elif "second chance" in text:
-    await update.message.reply_text(SECOND_CHANCE)
+    await (
+        update.message.reply_text(SECOND_CHANCE)
+    )
 
 elif "trustpay" in text:
-    await update.message.reply_text(TRUSTPAY)
+    await (
+        update.message.reply_text(TRUSTPAY)
+    )
 
 elif "with confidence" in text:
-    await update.message.reply_text(WITH_CONFIDENCE)
+    await (
+        update.message.reply_text(WITH_CONFIDENCE)
+    )
 
-elif "business credit" in text or "net 30" in text or "net-30" in text or "paynet" in text:
-    await update.message.reply_text(BUSINESS_CREDIT)
+elif any(word in text for word in ["business credit", "net 30", "net-30", "paynet"]):
+    await (
+        update.message.reply_text(BUSINESS_CREDIT)
+    )
 
 elif "genesis" in text:
-    await update.message.reply_text(
-        "I'm here. How can I help?"
+    await (
+        update.message.reply_text("I'm here. How can I help?")
     )
         
 
