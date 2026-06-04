@@ -6,6 +6,7 @@ from genesis_knowledge import FOUNDER
 from genesis_knowledge import SECOND_CHANCE
 from genesis_knowledge import TRUSTPAY
 from genesis_knowledge import WITH_CONFIDENCE
+from genesis_knowledge import BUSINESS_CREDIT
 TOKEN = os.getenv("BOT_TOKEN")
 
 # START COMMAND
@@ -66,19 +67,22 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"His mission is {FOUNDER['mission']}"
         )
 
-    elif "second chance" in text:
-        await update.message.reply_text(SECOND_CHANCE)
+elif "second chance" in text:
+    await update.message.reply_text(SECOND_CHANCE)
 
-    elif "trustpay" in text:
-        await update.message.reply_text(TRUSTPAY)
+elif "trustpay" in text:
+    await update.message.reply_text(TRUSTPAY)
 
-    elif "with confidence" in text:
-        await update.message.reply_text(WITH_CONFIDENCE)
+elif "with confidence" in text:
+    await update.message.reply_text(WITH_CONFIDENCE)
 
-    elif "genesis" in text:
-        await update.message.reply_text(
-            "I'm here. How can I help?"
-        )
+elif "business credit" in text or "net 30" in text or "net-30" in text or "paynet" in text:
+    await update.message.reply_text(BUSINESS_CREDIT)
+
+elif "genesis" in text:
+    await update.message.reply_text(
+        "I'm here. How can I help?"
+    )
         
 
 app = Application.builder().token(TOKEN).build()
