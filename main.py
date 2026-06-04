@@ -3,6 +3,9 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 import os
 from genesis_knowledge import ABOUT_ALEJANDRO
 from genesis_knowledge import FOUNDER
+from genesis_knowledge import SECOND_CHANCE
+from genesis_knowledge import TRUSTPAY
+from genesis_knowledge import WITH_CONFIDENCE
 TOKEN = os.getenv("BOT_TOKEN")
 
 # START COMMAND
@@ -63,10 +66,20 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"His mission is {FOUNDER['mission']}"
         )
 
+    elif "second chance" in text:
+        await update.message.reply_text(SECOND_CHANCE)
+
+    elif "trustpay" in text:
+        await update.message.reply_text(TRUSTPAY)
+
+    elif "with confidence" in text:
+        await update.message.reply_text(WITH_CONFIDENCE)
+
     elif "genesis" in text:
         await update.message.reply_text(
             "I'm here. How can I help?"
         )
+        
 
 app = Application.builder().token(TOKEN).build()
 
