@@ -83,3 +83,27 @@ WITH_CONFIDENCE = """
 With Confidence focuses on building confidence,
 credit, business ownership, and wealth.
 """
+
+BUSINESS_CREDIT = """
+Business credit is the financial reputation of a business.
+
+It helps a company qualify for vendor accounts, credit lines, fuel cards, store cards, equipment financing, and eventually larger business funding.
+
+Business credit is built through:
+1. A properly formed business
+2. EIN
+3. Business bank account
+4. Business address
+5. Business phone number
+6. Website and business email
+7. Vendor accounts that report payments
+8. On-time payments
+
+Important business credit bureaus include Dun & Bradstreet, Experian Business, Equifax Business, PayNet, and the Small Business Financial Exchange.
+
+Net-30 means the business buys now and pays within 30 days.
+Net-60 means the business pays within 60 days.
+Net-90 means the business pays within 90 days.
+
+The goal is to build trust before asking for larger funding.
+"""
