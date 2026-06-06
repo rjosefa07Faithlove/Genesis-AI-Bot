@@ -253,7 +253,7 @@ The goal is to build assets that continue producing income and opportunities ove
 """
 
 GENESIS = """
-Genesis AI is a knowledge and personal development assistant created by Alejandro R. Fowler.
+Genesis AI is a knowledge and personal development assistant created by Josefa M. Romero and Alejandro R. Fowler.
 
 Genesis provides guidance on:
 
