@@ -273,3 +273,11 @@ Its mission is to help people build confidence, knowledge, wealth, leadership, a
 
 Ask Genesis a topic and it will share practical information and guidance.
 """
+
+UNKNOWN_RESPONSES = [
+    "I am still learning that topic.",
+    "I don't have information on that subject yet.",
+    "That knowledge has not been added to my database.",
+    "I cannot answer that question yet, but my knowledge is growing.",
+    "I do not have a response for that topic right now."
+]
