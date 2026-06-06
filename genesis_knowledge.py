@@ -251,3 +251,25 @@ A successful business creates value before it seeks profit.
 
 The goal is to build assets that continue producing income and opportunities over time.
 """
+
+GENESIS = """
+Genesis AI is a knowledge and personal development assistant created by Alejandro R. Fowler.
+
+Genesis provides guidance on:
+
+• Leadership
+• Personal Credit
+• Business Credit
+• Generational Wealth
+• Entrepreneurship
+• Financial Literacy
+• Tax Deeds
+• Racin Ayisyen 1804
+• TrustPay
+• Second Chance
+• MonaLisa and Joesie's Kitchen
+
+Its mission is to help people build confidence, knowledge, wealth, leadership, and opportunity.
+
+Ask Genesis a topic and it will share practical information and guidance.
+"""
