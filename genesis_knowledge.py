@@ -280,4 +280,11 @@ UNKNOWN_RESPONSES = [
     "That knowledge has not been added to my database.",
     "I cannot answer that question yet, but my knowledge is growing.",
     "I do not have a response for that topic right now."
+    "I'm still learning that topic. Try asking me about leadership, business credit, personal credit, wealth building, or entrepreneurship.",
+    
+    "I don't have information on that subject yet. Ask me about one of my current knowledge areas.",
+    
+    "That's outside my current knowledge base. My creator is continuously expanding what I know.",
+    
+    "Interesting question. I don't have a response for that yet, but I am constantly growing."
 ]
