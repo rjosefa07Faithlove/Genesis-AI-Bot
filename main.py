@@ -109,7 +109,7 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     "ownership",
     "vision"
 ]):
-        await update.message.reply_text(LEADERSHIP).  
+        await update.message.reply_text(LEADERSHIP) 
 
     elif "genesis" in text:
         await update.message.reply_text("I'm here. How can I help?")
