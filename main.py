@@ -1,21 +1,21 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import os
+
 from genesis_knowledge import ABOUT_ALEJANDRO
 from genesis_knowledge import FOUNDER
 from genesis_knowledge import SECOND_CHANCE
 from genesis_knowledge import TRUSTPAY
 from genesis_knowledge import WITH_CONFIDENCE
 from genesis_knowledge import BUSINESS_CREDIT
+
 TOKEN = os.getenv("BOT_TOKEN")
 
-# START COMMAND
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
-        "Hello. I am Genesis AI Assistant."
-    )
 
-# HELP COMMAND
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("Hello. I am Genesis AI Assistant.")
+
+
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         """
@@ -30,31 +30,31 @@ Genesis Commands
 """
     )
 
-# BUSINESS
+
 async def business(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "Business begins with solving a problem. Focus on value first, money second."
     )
 
-# CREDIT
+
 async def credit(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "Credit is a financial reputation. Protect it and build it consistently."
     )
 
-# MINDSET
+
 async def mindset(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "Discipline beats motivation when motivation disappears."
     )
 
-# LEADERSHIP
+
 async def leadership(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "A leader serves first. Influence comes from trust, consistency, and example."
     )
 
-# GROUP RESPONSE
+
 async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text.lower()
 
@@ -67,31 +67,21 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"His mission is {FOUNDER['mission']}"
         )
 
-elif "second chance" in text:
-    await (
-        update.message.reply_text(SECOND_CHANCE)
-    )
+    elif "second chance" in text:
+        await update.message.reply_text(SECOND_CHANCE)
 
-elif "trustpay" in text:
-    await (
-        update.message.reply_text(TRUSTPAY)
-    )
+    elif "trustpay" in text:
+        await update.message.reply_text(TRUSTPAY)
 
-elif "with confidence" in text:
-    await (
-        update.message.reply_text(WITH_CONFIDENCE)
-    )
+    elif "with confidence" in text:
+        await update.message.reply_text(WITH_CONFIDENCE)
 
-elif any(word in text for word in ["business credit", "net 30", "net-30", "paynet"]):
-    await (
-        update.message.reply_text(BUSINESS_CREDIT)
-    )
+    elif any(word in text for word in ["business credit", "net 30", "net-30", "paynet"]):
+        await update.message.reply_text(BUSINESS_CREDIT)
 
-elif "genesis" in text:
-    await (
-        update.message.reply_text("I'm here. How can I help?")
-    )
-        
+    elif "genesis" in text:
+        await update.message.reply_text("I'm here. How can I help?")
+
 
 app = Application.builder().token(TOKEN).build()
 
@@ -102,8 +92,6 @@ app.add_handler(CommandHandler("credit", credit))
 app.add_handler(CommandHandler("mindset", mindset))
 app.add_handler(CommandHandler("leadership", leadership))
 
-app.add_handler(
-    MessageHandler(filters.TEXT & ~filters.COMMAND, group_reply)
-)
+app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, group_reply))
 
 app.run_polling()
