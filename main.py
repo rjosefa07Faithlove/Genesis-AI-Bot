@@ -79,10 +79,13 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif any(word in text for word in ["business credit", "net 30", "net-30", "paynet"]):
         await update.message.reply_text(BUSINESS_CREDIT)
 
+    elif "1804" in text or "racin ayisyen" in text:
+        await update.message.reply_text(RACIN_1804)
+
     elif "genesis" in text:
         await update.message.reply_text("I'm here. How can I help?")
 
-
+    
 app = Application.builder().token(TOKEN).build()
 
 app.add_handler(CommandHandler("start", start))
