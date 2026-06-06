@@ -133,9 +133,13 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 ]):
         await update.message.reply_text(BUSINESS_DEVELOPMENT)
 
-    elif "genesis" in text:
-        await update.message.reply_text("I'm here. How can I help?")
+    elif "what is genesis" in text:
+        await update.message.reply_text(GENESIS)
 
+    elif "genesis" in text:
+        await update.message.reply_text(
+        "Genesis AI is a knowledge assistant. Ask me about leadership, business credit, personal credit, wealth building, tax deeds, TrustPay, Second Chance, MonaLisa, or Racin Ayisyen 1804."
+    )
     
 app = Application.builder().token(TOKEN).build()
 
