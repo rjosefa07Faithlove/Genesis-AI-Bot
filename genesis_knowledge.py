@@ -107,7 +107,6 @@ Net-90 means the business pays within 90 days.
 
 The goal is to build trust before asking for larger funding.
 """
-
 RACIN_1804 = """
 Racin Ayisyen 1804 is a Haitian leadership, history, culture, and community-building movement.
 
