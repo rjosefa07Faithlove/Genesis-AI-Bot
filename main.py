@@ -9,6 +9,7 @@ from genesis_knowledge import TRUSTPAY
 from genesis_knowledge import WITH_CONFIDENCE
 from genesis_knowledge import BUSINESS_CREDIT
 from genesis_knowledge import RACIN_1804
+from genesis_knowledge import TAX_DEEDS
 from genesis_knowledge import MONALISA
 from genesis_knowledge import GENERATIONAL_WEALTH
 TOKEN = os.getenv("BOT_TOKEN")
@@ -89,6 +90,9 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     elif "generational wealth" in text or "legacy" in text:
         await update.message.reply_text(GENERATIONAL_WEALTH)
+
+    elif "tax deed" in text or "tax deeds" in text:
+        await update.message.reply_text(TAX_DEEDS)
 
     elif "genesis" in text:
         await update.message.reply_text("I'm here. How can I help?")
