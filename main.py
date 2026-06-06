@@ -18,6 +18,7 @@ from genesis_knowledge import PERSONAL_CREDIT
 from genesis_knowledge import BUSINESS_DEVELOPMENT
 from genesis_knowledge import GENESIS
 from genesis_knowledge import UNKNOWN_RESPONSES
+from genesis_knowledge import FINANCIAL_LITERACY
 TOKEN = os.getenv("BOT_TOKEN")
 
 
@@ -148,6 +149,15 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(
         random.choice(UNKNOWN_RESPONSES)
         )
+
+    elif any(word in text for word in [
+    "financial literacy",
+    "money management",
+    "budgeting",
+    "saving money",
+    "debt management"
+]):
+        await update.message.reply_text(FINANCIAL_LITERACY)
     
 app = Application.builder().token(TOKEN).build()
 
