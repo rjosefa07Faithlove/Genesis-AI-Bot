@@ -199,3 +199,22 @@ The goal is not simply to buy property.
 
 The goal is to acquire assets that generate income, equity, and long-term wealth.
 """
+
+LEADERSHIP = """
+Leadership is the ability to influence, guide, and serve others toward a common goal.
+
+Core leadership principles:
+
+1. Integrity
+2. Accountability
+3. Discipline
+4. Vision
+5. Communication
+6. Service
+7. Consistency
+8. Responsibility
+
+Great leaders create leaders.
+
+A leader owns everything within his sphere of influence and leads by example.
+"""
