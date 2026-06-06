@@ -10,6 +10,7 @@ from genesis_knowledge import WITH_CONFIDENCE
 from genesis_knowledge import BUSINESS_CREDIT
 from genesis_knowledge import RACIN_1804
 from genesis_knowledge import MONALISA
+from genesis_knowledge import GENERATIONAL_WEALTH
 TOKEN = os.getenv("BOT_TOKEN")
 
 
