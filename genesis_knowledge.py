@@ -107,3 +107,23 @@ Net-90 means the business pays within 90 days.
 
 The goal is to build trust before asking for larger funding.
 """
+
+RACIN_1804 = """
+Racin Ayisyen 1804 is a Haitian leadership, history, culture, and community-building movement.
+
+Its purpose is to help Haitian men and women build pride, discipline, unity, education, leadership, and generational responsibility.
+
+Core values include:
+1. History
+2. Leadership
+3. Discipline
+4. Unity
+5. Family
+6. Culture
+7. Economic strength
+8. Community responsibility
+
+The movement teaches that in order to lead, one must first learn to follow.
+
+Its mission is to raise leaders who understand their history, protect their people, build strong families, and create lasting institutions.
+"""
