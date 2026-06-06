@@ -15,6 +15,7 @@ from genesis_knowledge import GENERATIONAL_WEALTH
 from genesis_knowledge import LEADERSHIP
 from genesis_knowledge import PERSONAL_CREDIT 
 from genesis_knowledge import BUSINESS_DEVELOPMENT
+from genesis_knowledge import GENESIS
 TOKEN = os.getenv("BOT_TOKEN")
 
 
