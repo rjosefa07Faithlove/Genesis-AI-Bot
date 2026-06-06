@@ -153,3 +153,22 @@ Natural taste.
 Family made.
 Built with love.
 """
+
+GENERATIONAL_WEALTH = """
+Generational wealth is the process of building, preserving, and transferring assets from one generation to the next.
+
+It is created through:
+
+1. Financial education
+2. Business ownership
+3. Real estate ownership
+4. Investments
+5. Trusts and estate planning
+6. Life insurance
+7. Strong family leadership
+8. Financial discipline
+
+Generational wealth is not simply about leaving money behind. It is about creating systems, assets, businesses, knowledge, and opportunities that continue benefiting future generations.
+
+The goal is to move a family from survival to stability, from stability to ownership, and from ownership to legacy.
+"""
