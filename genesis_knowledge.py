@@ -288,3 +288,24 @@ UNKNOWN_RESPONSES = [
     
     "Interesting question. I don't have a response for that yet, but I am constantly growing."
 ]
+
+FINANCIAL_LITERACY = """
+Financial literacy is the ability to understand and manage money wisely.
+
+Core areas include:
+
+1. Budgeting
+2. Saving
+3. Credit
+4. Debt management
+5. Investing
+6. Insurance
+7. Taxes
+8. Business ownership
+9. Asset building
+10. Generational wealth
+
+Financial literacy helps people make better decisions, avoid unnecessary debt, build stability, and create long-term opportunities.
+
+The goal is to move from spending money emotionally to managing money strategically.
+"""
