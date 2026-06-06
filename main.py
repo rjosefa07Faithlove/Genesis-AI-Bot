@@ -13,6 +13,7 @@ from genesis_knowledge import TAX_DEEDS
 from genesis_knowledge import MONALISA
 from genesis_knowledge import GENERATIONAL_WEALTH
 from genesis_knowledge import LEADERSHIP
+from genesis_knowledge import PERSONAL_CREDIT 
 TOKEN = os.getenv("BOT_TOKEN")
 
 
@@ -110,6 +111,16 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     "vision"
 ]):
         await update.message.reply_text(LEADERSHIP) 
+
+    elif any(word in text for word in [
+    "credit score",
+    "personal credit",
+    "fico",
+    "equifax",
+    "experian",
+    "transunion"
+]):
+        await update.message.reply_text(PERSONAL_CREDIT)
 
     elif "genesis" in text:
         await update.message.reply_text("I'm here. How can I help?")
