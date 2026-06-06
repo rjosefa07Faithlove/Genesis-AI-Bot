@@ -12,6 +12,7 @@ from genesis_knowledge import RACIN_1804
 from genesis_knowledge import TAX_DEEDS
 from genesis_knowledge import MONALISA
 from genesis_knowledge import GENERATIONAL_WEALTH
+from genesis_knowledge import LEADERSHIP
 TOKEN = os.getenv("BOT_TOKEN")
 
 
@@ -99,6 +100,16 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     "auction property" 
 ]):
         await update.message.reply_text(TAX_DEEDS)
+
+    elif any(word in text for word in [
+    "leadership",
+    "leader",
+    "lead",
+    "accountability",
+    "ownership",
+    "vision"
+]):
+        await update.message.reply_text(LEADERSHIP).  
 
     elif "genesis" in text:
         await update.message.reply_text("I'm here. How can I help?")
