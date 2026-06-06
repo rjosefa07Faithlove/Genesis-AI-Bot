@@ -91,7 +91,13 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif "generational wealth" in text or "legacy" in text:
         await update.message.reply_text(GENERATIONAL_WEALTH)
 
-    elif "tax deed" in text or "tax deeds" in text:
+    elif any(word in text for word in [
+    "tax deed",
+    "tax deeds",
+    "real estate",
+    "property investing",
+    "auction property" 
+]):
         await update.message.reply_text(TAX_DEEDS)
 
     elif "genesis" in text:
