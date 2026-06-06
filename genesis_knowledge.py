@@ -218,3 +218,17 @@ Great leaders create leaders.
 
 A leader owns everything within his sphere of influence and leads by example.
 """
+
+PERSONAL_CREDIT = """
+Personal credit measures an individual's ability to manage debt responsibly.
+
+Important factors:
+
+1. Payment history
+2. Credit utilization
+3. Age of accounts
+4. Credit mix
+5. New credit inquiries
+
+The goal is to build trust with lenders by demonstrating consistent financial responsibility.
+"""
