@@ -127,3 +127,29 @@ The movement teaches that in order to lead, one must first learn to follow.
 
 Its mission is to raise leaders who understand their history, protect their people, build strong families, and create lasting institutions.
 """
+
+MONALISA = """
+MonaLisa is a beverage brand under Joesie's Kitchen.
+
+Its signature product is a ginger tea made with natural herbs, spices, and carefully selected ingredients.
+
+MonaLisa represents health, flavor, culture, family ownership, and business growth.
+
+The brand focuses on:
+1. Natural ingredients
+2. Ginger-based wellness drinks
+3. Consistent taste
+4. Clean presentation
+5. Customer trust
+6. Community support
+7. Family entrepreneurship
+8. Long-term brand building
+
+MonaLisa's mission is to provide refreshing, natural beverages while building Joesie's Kitchen into a strong family-owned brand with room to grow into stores, events, catering, and larger distribution.
+
+The brand philosophy is simple:
+
+Natural taste.
+Family made.
+Built with love.
+"""
