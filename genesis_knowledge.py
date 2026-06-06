@@ -232,3 +232,22 @@ Important factors:
 
 The goal is to build trust with lenders by demonstrating consistent financial responsibility.
 """
+
+BUSINESS_DEVELOPMENT = """
+Business development is the process of building systems, relationships, and opportunities that create long-term growth.
+
+Core principles:
+
+1. Solve real problems
+2. Build strong relationships
+3. Create systems
+4. Generate revenue
+5. Protect cash flow
+6. Build business credit
+7. Develop leadership
+8. Scale responsibly
+
+A successful business creates value before it seeks profit.
+
+The goal is to build assets that continue producing income and opportunities over time.
+"""
