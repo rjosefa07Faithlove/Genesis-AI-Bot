@@ -1,6 +1,7 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import os
+import random
 
 from genesis_knowledge import ABOUT_ALEJANDRO
 from genesis_knowledge import FOUNDER
@@ -16,6 +17,7 @@ from genesis_knowledge import LEADERSHIP
 from genesis_knowledge import PERSONAL_CREDIT 
 from genesis_knowledge import BUSINESS_DEVELOPMENT
 from genesis_knowledge import GENESIS
+from genesis_knowledge import UNKNOWN_RESPONSES
 TOKEN = os.getenv("BOT_TOKEN")
 
 
@@ -141,6 +143,11 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(
         "Genesis AI is a knowledge assistant. Ask me about leadership, business credit, personal credit, wealth building, tax deeds, TrustPay, Second Chance, MonaLisa, or Racin Ayisyen 1804."
     )
+
+    else:
+        await update.message.reply_text(
+        random.choice(UNKNOWN_RESPONSES)
+        )
     
 app = Application.builder().token(TOKEN).build()
 
