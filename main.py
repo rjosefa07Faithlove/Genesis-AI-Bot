@@ -87,6 +87,9 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif "monalisa" in text or "joesie's kitchen" in text:
         await update.message.reply_text(MONALISA)
 
+    elif "generational wealth" in text or "legacy" in text:
+        await update.message.reply_text(GENERATIONAL_WEALTH)
+
     elif "genesis" in text:
         await update.message.reply_text("I'm here. How can I help?")
 
