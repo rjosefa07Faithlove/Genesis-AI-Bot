@@ -8,7 +8,7 @@ from genesis_knowledge import SECOND_CHANCE
 from genesis_knowledge import TRUSTPAY
 from genesis_knowledge import WITH_CONFIDENCE
 from genesis_knowledge import BUSINESS_CREDIT
-
+from genesis_knowledge import RACIN_1804
 TOKEN = os.getenv("BOT_TOKEN")
 
 
