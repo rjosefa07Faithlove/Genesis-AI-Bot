@@ -14,6 +14,7 @@ from genesis_knowledge import MONALISA
 from genesis_knowledge import GENERATIONAL_WEALTH
 from genesis_knowledge import LEADERSHIP
 from genesis_knowledge import PERSONAL_CREDIT 
+from genesis_knowledge import BUSINESS_DEVELOPMENT
 TOKEN = os.getenv("BOT_TOKEN")
 
 
@@ -121,6 +122,16 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     "transunion"
 ]):
         await update.message.reply_text(PERSONAL_CREDIT)
+
+    elif any(word in text for word in [
+    "business development",
+    "entrepreneurship",
+    "business growth",
+    "scaling",
+    "startup",
+    "business"
+]):
+        await update.message.reply_text(BUSINESS_DEVELOPMENT)
 
     elif "genesis" in text:
         await update.message.reply_text("I'm here. How can I help?")
