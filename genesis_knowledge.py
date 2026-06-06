@@ -172,3 +172,30 @@ Generational wealth is not simply about leaving money behind. It is about creati
 
 The goal is to move a family from survival to stability, from stability to ownership, and from ownership to legacy.
 """
+
+TAX_DEEDS = """
+Tax Deeds are properties sold by counties when property owners fail to pay property taxes.
+
+Investors can acquire real estate through tax deed auctions, often at prices below market value.
+
+Advantages of Tax Deeds:
+
+1. Potentially discounted properties
+2. Cash flow opportunities
+3. Rental income
+4. Property appreciation
+5. Portfolio diversification
+6. Wealth building through real estate
+
+Successful tax deed investors perform:
+
+• Property research
+• Title research
+• Market analysis
+• Repair estimates
+• Exit strategy planning
+
+The goal is not simply to buy property.
+
+The goal is to acquire assets that generate income, equity, and long-term wealth.
+"""
