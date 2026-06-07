@@ -309,3 +309,30 @@ Financial literacy helps people make better decisions, avoid unnecessary debt, b
 
 The goal is to move from spending money emotionally to managing money strategically.
 """
+
+INVESTING_BASICS = """
+Investing is the process of putting money into assets with the goal of building wealth over time.
+
+Common investment vehicles include:
+
+1. Stocks
+2. ETFs
+3. Index funds
+4. Real estate
+5. Bonds
+6. Businesses
+7. Retirement accounts
+
+Basic investing principles:
+
+1. Learn before risking money
+2. Start small
+3. Diversify
+4. Think long-term
+5. Manage risk
+6. Avoid emotional decisions
+7. Reinvest gains
+8. Build assets consistently
+
+The goal of investing is not quick money. The goal is ownership, cash flow, appreciation, and long-term financial growth.
+"""
