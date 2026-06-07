@@ -19,6 +19,7 @@ from genesis_knowledge import BUSINESS_DEVELOPMENT
 from genesis_knowledge import GENESIS
 from genesis_knowledge import UNKNOWN_RESPONSES
 from genesis_knowledge import FINANCIAL_LITERACY
+from genesis_knowledge import INVESTING_BASICS
 TOKEN = os.getenv("BOT_TOKEN")
 
 
