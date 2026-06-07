@@ -155,6 +155,16 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 ]):
         await update.message.reply_text(FINANCIAL_LITERACY)
 
+    elif any(word in text for word in [
+    "investing",
+    "investment",
+    "stocks",
+    "etfs",
+    "index funds",
+    "portfolio"
+]):
+        await update.message.reply_text(INVESTING_BASICS)
+
     else:
         await update.message.reply_text(
         random.choice(UNKNOWN_RESPONSES)
