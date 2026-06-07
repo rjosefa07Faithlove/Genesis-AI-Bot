@@ -145,11 +145,6 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Genesis AI is a knowledge assistant. Ask me about leadership, business credit, personal credit, wealth building, tax deeds, TrustPay, Second Chance, MonaLisa, or Racin Ayisyen 1804."
     )
 
-    else:
-        await update.message.reply_text(
-        random.choice(UNKNOWN_RESPONSES)
-        )
-
     elif any(word in text for word in [
     "financial literacy",
     "money management",
@@ -158,7 +153,12 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     "debt management"
 ]):
         await update.message.reply_text(FINANCIAL_LITERACY)
-    
+
+    else:
+        await update.message.reply_text(
+        random.choice(UNKNOWN_RESPONSES)
+        )
+   
 app = Application.builder().token(TOKEN).build()
 
 app.add_handler(CommandHandler("start", start))
