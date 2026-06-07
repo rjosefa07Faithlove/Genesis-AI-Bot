@@ -20,6 +20,7 @@ from genesis_knowledge import GENESIS
 from genesis_knowledge import UNKNOWN_RESPONSES
 from genesis_knowledge import FINANCIAL_LITERACY
 from genesis_knowledge import INVESTING_BASICS
+from genesis_knowledge import CASUAL_CONVERSATION
 TOKEN = os.getenv("BOT_TOKEN")
 
 
@@ -164,6 +165,11 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     "portfolio"
 ]):
         await update.message.reply_text(INVESTING_BASICS)
+
+    else:
+    await update.message.reply_text(
+        random.choice(CASUAL_CONVERSATION)
+    )
 
     else:
         await update.message.reply_text(
