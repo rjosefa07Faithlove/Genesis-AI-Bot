@@ -21,6 +21,12 @@ Genesis was created to share knowledge, guidance, and practical tools that
 help people improve their lives.
 """
 
+ABOUT_JOSEFA = """
+Josefa M. Romero is connected to Genesis AI, Joesie's Kitchen, and the MonaLisa beverage brand.
+
+She represents family ownership, business building, creativity, and the growth of Joesie's Kitchen as a brand.
+"""
+
 GENESIS_PRINCIPLES = [
     "Confidence before success",
     "Discipline creates freedom",
