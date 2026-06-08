@@ -21,6 +21,7 @@ from genesis_knowledge import UNKNOWN_RESPONSES
 from genesis_knowledge import FINANCIAL_LITERACY
 from genesis_knowledge import INVESTING_BASICS
 from genesis_knowledge import CASUAL_CONVERSATION
+from genesis_knowledge import ABOUT_JOSEFA
 TOKEN = os.getenv("BOT_TOKEN")
 
 
@@ -179,6 +180,9 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(
         random.choice(CASUAL_CONVERSATION)
     )
+
+    elif "josefa" in text or "joesie" in text:
+        await update.message.reply_text(ABOUT_JOSEFA)
 
     else:
         await update.message.reply_text(
