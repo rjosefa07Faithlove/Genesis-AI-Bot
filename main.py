@@ -166,10 +166,19 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 ]):
         await update.message.reply_text(INVESTING_BASICS)
 
-    else:
+    elif any(word in text for word in [
+    "hello",
+    "hi",
+    "good morning",
+    "good evening",
+    "anyone",
+    "who's here",
+    "whats up",
+    "what's up"
+]):
         await update.message.reply_text(
         random.choice(CASUAL_CONVERSATION)
-        )
+    )
 
     else:
         await update.message.reply_text(
