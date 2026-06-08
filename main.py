@@ -167,9 +167,9 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(INVESTING_BASICS)
 
     else:
-    await update.message.reply_text(
+        await update.message.reply_text(
         random.choice(CASUAL_CONVERSATION)
-    )
+        )
 
     else:
         await update.message.reply_text(
