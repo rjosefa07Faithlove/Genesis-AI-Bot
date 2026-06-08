@@ -22,7 +22,7 @@ help people improve their lives.
 """
 
 ABOUT_JOSEFA = """
-Josefa M. Romero is connected to Genesis AI, Joesie's Kitchen, and the MonaLisa beverage brand.
+Josefa M. Romero is Co-founder of Genesis AI, Founder of Joesie's Kitchen, and the MonaLisa beverage brand.
 
 She represents family ownership, business building, creativity, and the growth of Joesie's Kitchen as a brand.
 """
