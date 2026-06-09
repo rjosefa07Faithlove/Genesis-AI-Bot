@@ -22,6 +22,7 @@ from genesis_knowledge import FINANCIAL_LITERACY
 from genesis_knowledge import INVESTING_BASICS
 from genesis_knowledge import CASUAL_CONVERSATION
 from genesis_knowledge import ABOUT_JOSEFA
+from genesis_knowledge import CAPABILITIES
 TOKEN = os.getenv("BOT_TOKEN")
 
 
@@ -183,6 +184,9 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     elif "josefa" in text or "joesie" in text:
         await update.message.reply_text(ABOUT_JOSEFA)
+
+    elif "what can genesis do" in text or "genesis help" in text or "topics" in text or "i need help" in text:
+        await update.message.reply_text(CAPABILITIES)
 
     else:
         await update.message.reply_text(
