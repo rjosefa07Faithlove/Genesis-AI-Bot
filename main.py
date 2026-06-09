@@ -141,7 +141,7 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 ]):
         await update.message.reply_text(BUSINESS_DEVELOPMENT)
 
-    elif "what is genesis" in text:
+    elif "what is genesis" in text or "what are you" in text or "what are you?" in text:
         await update.message.reply_text(GENESIS)
 
     elif "genesis" in text:
