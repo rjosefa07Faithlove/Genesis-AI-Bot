@@ -349,6 +349,7 @@ CASUAL_CONVERSATION = [
     "I'm still learning. Try asking about business, credit, leadership, wealth building, or one of my knowledge topics.",
     "What's good, I'm mainly focused on business, credit, leadership, and personal development right now."
     "Genesis here, let's talk. What topic would wyou like to touch base on?",
+    
     CAPABILITIES = """
 Genesis AI can currently help with:
 
