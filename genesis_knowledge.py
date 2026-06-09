@@ -351,6 +351,7 @@ CASUAL_CONVERSATION = [
     "Genesis here, let's talk. What topic would wyou like to touch base on?",
     
     CAPABILITIES = """
+    
 Genesis AI can currently help with:
 
 1. Leadership
