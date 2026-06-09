@@ -375,4 +375,3 @@ Ask a topic directly, such as:
 • MonaLisa
 • What is Genesis?
 """
-]
