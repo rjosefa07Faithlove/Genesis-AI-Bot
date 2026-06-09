@@ -342,18 +342,19 @@ Basic investing principles:
 
 The goal of investing is not quick money. The goal is ownership, cash flow, appreciation, and long-term financial growth.
 """
+
 CASUAL_CONVERSATION = [
     "I'm here and listening.",
     "Looks like a conversation rather than a knowledge request.",
     "I'm online. What would you like to discuss?",
     "I'm still learning. Try asking about business, credit, leadership, wealth building, or one of my knowledge topics.",
-    "What's good, I'm mainly focused on business, credit, leadership, and personal development right now."
-    "Genesis here, let's talk. What topic would wyou like to touch base on?",
-    
-    CAPABILITIES = """
-    
-Genesis AI can currently help with:
+    "What's good, I'm mainly focused on business, credit, leadership, and personal development right now.",
+    "Genesis here, let's talk. What topic would you like to touch base on?",
+]
 
+CAPABILITIES = """
+Genesis AI can currently help with:
+    
 1. Leadership
 2. Personal Credit
 3. Business Credit
