@@ -69,9 +69,27 @@ async def leadership(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "A leader serves first. Influence comes from trust, consistency, and example."
     )
 
+def search_docs(text):
+    for title, content in DOCUMENT_LIBRARY.items():
+        if title in text:
+            return content
+
+    for title, content in DOCUMENT_LIBRARY.items():
+        keywords = title.split()
+        if any(word in text for word in keywords):
+            return content
+
+    return None
+
 
 async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text.lower()
+    
+        doc_answer = search_docs(text)
+
+    if doc_answer:
+        await update.message.reply_text(doc_answer)
+        return
 
     if "who is alejandro" in text or "alejandro fowler" in text:
         await update.message.reply_text(ABOUT_ALEJANDRO)
