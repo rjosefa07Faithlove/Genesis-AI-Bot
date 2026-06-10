@@ -76,7 +76,7 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if "who is alejandro" in text or "alejandro fowler" in text:
         await update.message.reply_text(ABOUT_ALEJANDRO)
 
-    elif "who created genesis" in text or "founder of genesis" in text:
+    elif "who created genesis" in text or "founder of genesis" in text or "who created you" in text or "who created you?" in text:
         await update.message.reply_text(
             f"Genesis was created by {FOUNDER['name']}, {FOUNDER['role']}. "
             f"His mission is {FOUNDER['mission']}"
