@@ -24,18 +24,7 @@ from genesis_knowledge import CASUAL_CONVERSATION
 from genesis_knowledge import ABOUT_JOSEFA
 from genesis_knowledge import CAPABILITIES
 from genesis_docs import DOCUMENT_LIBRARY
-DOCUMENT_LIBRARY = {
-    "Business Credit Chapter 1": BUSINESS_CREDIT_CH1,
-    "Business Credit Chapter 2": BUSINESS_CREDIT_CH2,
-    "Business Credit Chapter 3": BUSINESS_CREDIT_CH3,
-    "Business Credit Chapter 4": BUSINESS_CREDIT_CH4,
-    "Business Credit Chapter 5": BUSINESS_CREDIT_CH5,
-    "Business Credit Chapter 6": BUSINESS_CREDIT_CH6,
-    "Social Media Supplement": SOCIAL_MEDIA,
-    "Grinders Manifesto": GRINDERS_MANIFESTO,
-    "Just Enough To Get By": JUST_ENOUGH,
-    "Licensing": LICENSING
-}
+
 TOKEN = os.getenv("BOT_TOKEN")
 
 
