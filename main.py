@@ -23,6 +23,7 @@ from genesis_knowledge import INVESTING_BASICS
 from genesis_knowledge import CASUAL_CONVERSATION
 from genesis_knowledge import ABOUT_JOSEFA
 from genesis_knowledge import CAPABILITIES
+from genesis_docs import DOCUMENT_LIBRARY
 TOKEN = os.getenv("BOT_TOKEN")
 
 
@@ -187,6 +188,28 @@ async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     elif "what can genesis do" in text or "genesis help" in text or "topics" in text or "i need help" in text:
         await update.message.reply_text(CAPABILITIES)
+
+    elif any(word in text for word in [
+    "business credit chapter 1",
+    "business presence",
+    "business setup",
+    "google business profile",
+    "business address",
+    "business phone",
+    "business email"
+]):
+        await update.message.reply_text(DOCUMENT_LIBRARY["business credit chapter 1"])
+
+    elif any(word in text for word in [
+    "licensing",
+    "business license",
+    "occupational license",
+    "auction license",
+    "auction business",
+    "dbpr",
+    "designated primary auctioneer"
+]):
+        await update.message.reply_text(DOCUMENT_LIBRARY["licensing"])
 
     else:
         await update.message.reply_text(
