@@ -85,7 +85,7 @@ def search_docs(text):
 async def group_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text.lower()
     
-        doc_answer = search_docs(text)
+    doc_answer = search_docs(text)
 
     if doc_answer:
         await update.message.reply_text(doc_answer)
