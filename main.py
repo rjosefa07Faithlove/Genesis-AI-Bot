@@ -24,7 +24,6 @@ from genesis_knowledge import CASUAL_CONVERSATION
 from genesis_knowledge import ABOUT_JOSEFA
 from genesis_knowledge import CAPABILITIES
 from genesis_docs import DOCUMENT_LIBRARY
-
 TOKEN = os.getenv("BOT_TOKEN")
 
 
